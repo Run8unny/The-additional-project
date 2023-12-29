@@ -6,11 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Loans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -22,49 +21,51 @@
         <a href="/" class="header__logo">Loans.com</a>
         <nav class="nav">
             <ul class="nav__menu">
-                <li><a class="menu-list" href="/">Rates & fees</a></li>
-                <li><a class="menu-list" href="/">How to apply</a></li>
-                <li><a class="menu-list" href="/">Questions?</a></li>
+                <li class="menu__list"><a href="/">Rates & fees</a></li>
+                <li class="menu__list"><a href="/">How to apply</a></li>
+                <li class="menu__list"><a href="/">Questions?</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <section class="main">
-        <div class="intro__info">
-            <h2 class="info__subtitle">Personal Loan</h2>
-            <h1 class="info__title">
-                Put your plans <br> into actions.
-            </h1>
-            <div class="intro__icons">
-                <div class="icons__item  icon-cloud">Online application</div>
-                <div class="icons__item  icon-money">Up to $50.000</div>
-                <div class="icons__item  icon-timer">The money is yours in 48h</div>
+    <section class="container main">
+        <section class="main__intro">
+            <div class="intro__info">
+                <h2 class="info__subtitle">Personal Loan</h2>
+                <h1 class="info__title">
+                    Put your plans <br> into actions.
+                </h1>
+                <div class="info__icons">
+                    <div class="icons__item  icon--cloud">Online application</div>
+                    <div class="icons__item  icon--money">Up to $50.000</div>
+                    <div class="icons__item  icon--timer">The money is yours in 48h</div>
+                </div>
             </div>
-        </div>
-        <div class="intro__form">
-            <h2 class="form-title">Let's change your life?</h2>
-            <form class="form">
-                <div class="form-row">
-                    <label for="name" class="form-label">Full name</label>
-                    <input class="form-control" type="text" required name="name" id="name" placeholder="John Doe">
-                </div>
+            <div class="intro__form">
+                <h2 class="form__title">Let's change your life?</h2>
+                <form class="form">
+                    <div class="form__row">
+                        <label for="name" class="form__label">Full name</label>
+                        <input class="form__control" type="text" required name="name" id="name" placeholder="John Doe">
+                    </div>
 
-                <div class="form-row">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input class="form-control" type="email" required name="email" id="email"
-                           placeholder="john.doe@apple.com">
-                </div>
+                    <div class="form__row">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input class="form__control" type="email" required name="email" id="email"
+                               placeholder="john.doe@apple.com">
+                    </div>
 
-                <div class="form-row">
-                    <label for="money" class="form-label">How much do you need?</label>
-                    <input class="form-control" type="email" required name="email" id="money" placeholder="1.000">
+                    <div class="form__row">
+                        <label for="money" class="form__label">How much do you need?</label>
+                        <input class="form__control" type="email" required name="email" id="money" placeholder="1.000">
+                    </div>
+                </form>
+                <div class="form__row__btn">
+                    <button class="form__btn">Check your rates</button>
                 </div>
-            </form>
-            <div class="form-row-btn">
-                <button class="form-btn">Check your rates</button>
             </div>
-        </div>
+        </section>
     </section>
 
 </div>
